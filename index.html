@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME | [CLINIC NAME HOY!]</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- SVG FAVICON: uncomment nalang kapag may picture na. Tas yung script pala
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <script src="script.js" defer></script>
+    -->
+</head>
+<body>
+
+    <div class="topbar">
+        <div class="container topbar__inner">
+            <div class="topbar__group">
+                <span class="topbar__hours">Open Monday to Saturday, 8:00 AM - 6:00 PM</span>
+                <ul class="topbar__links topbar__contact">
+                    <li><a href="tel: hoy penge number"><svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/>
+                    </svg><span class="label">Emergency: (123) 000-1111</span></a></li>
+                    <li><a href="mailto:info@clinicname.example"><svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="m22 7-10 6L2 7"/></svg><span class="label">info@clinicname.example</span></a></li>
+                    <li><a href="#contact"><svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="label">Find us</span></a></li>
+                </ul>
+            </div>
+            <ul class="topbar__links">
+            <li class="lang" role="group" aria-label="Language"><button type="button" data-lang="en">English</button><span aria-hidden="true">|</span><button type="button" data-lang="tl">Tagalog</button></li>
+            <li><a href="login.html">Log in</a></li>
+            <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <header class="navbar">
+        <div class="container navbar__inner">
+            <a href="index.html" class="logo">
+            <!-- SVG LOGO: uncomment the line below when logo.svg is ready
+            <img src="images/logo.svg" alt="[CLINIC NAME] logo" width="40" height="40">
+            -->
+            <span>[CLINIC NAME]<small>Clinic &amp; Patient Care</small></span>
+            </a>
+
+        <form class="search" role="search" action="find-a-doctor.html" method="get">
+            <label for="site-search" class="sr-only">Search</label>
+            <input type="search" id="site-search" name="q" placeholder="Search services, doctors or pages" autocomplete="off">
+            <button type="submit" aria-label="Search"><svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+            <ul class="search__results" id="search-results" hidden></ul>
+        </form>
+
+        <div class="navbar__actions">
+            <a class="btn btn--ghost" href="find-a-doctor.html">Find a Doctor</a>
+            <a class="btn btn--primary" href="appointment.html">Make an Appointment</a>
+        </div>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">&#9776;</label>
+
+        <nav class="mainnav" aria-label="Main">
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="index.html" aria-current="page">Home</a></li>
+                <li class="menu__item menu__item--has-sub">
+            <a class="menu__link" href="index.html#services">Services</a>
+            <ul class="dropdown">
+                <li><a href="ct-scan.html">CT Scan</a></li>
+                <li><a href="x-ray.html">X-ray</a></li>
+                <li><a href="laboratory-testing.html">Laboratory Testing</a></li>
+                <li><a href="urinalysis.html">Urinalysis</a></li>
+                <!-- ADD NEW SUB-CATEGORY: Kapag kulang pa pwede pa here dagdagan, tapos palagay narin yung link -->
+            </ul>
+        </li>
+            <li class="menu__item"><a class="menu__link" href="find-a-doctor.html">Find a Doctor</a></li>
+            <li class="menu__item"><a class="menu__link" href="appointment.html">Appointments</a></li>
+            <li class="menu__item"><a class="menu__link" href="requests.html">Requests</a></li>
+            <li class="menu__item"><a class="menu__link" href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+    </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Caring for you, one visit at a time.</h1>
+            <p>Book a check-up, see your doctor, and manage your appointments in one place.</p>
+            <a class="btn btn--light" href="appointment.html">Make an appointment</a>
+            <a class="btn btn--outline" href="register.html">Register as a patient</a>
+            <a class="btn btn--outline" href="find-a-doctor.html">Find a doctor</a>
+    </div>
+    </section>
+
+    <section class="section" id="services">
+    <div class="container">
+            <h2>Our services</h2>
+    <div class="grid">
+        <article class="card">
+        <!-- SVG ICON:
+        <img class="card__icon" src="images/icons/ct-scan.svg" alt="" width="48" height="48">
+        -->
+            <h3>CT Scan</h3>
+            <p>Detailed scans of organs, bones and tissue.</p>
+            <a class="btn btn--small" href="ct-scan.html">Overview</a>
+        </article>
+        <article class="card">
+        <!-- SVG ICON:
+        <img class="card__icon" src="images/icons/xray.svg" alt="" width="48" height="48">
+        -->
+            <h3>X-ray</h3>
+            <p>Quick imaging of the chest and bones.</p>
+            <a class="btn btn--small" href="x-ray.html">Overview</a>
+        </article>
+        <article class="card">
+        <!-- SVG ICON:
+        <img class="card__icon" src="images/icons/laboratory.svg" alt="" width="48" height="48">
+        -->
+            <h3>Laboratory Testing</h3>
+            <p>Blood tests and diagnostics.</p>
+            <a class="btn btn--small" href="laboratory-testing.html">Overview</a>
+        </article>
+        <article class="card">
+        <!-- SVG ICON:
+        <img class="card__icon" src="images/icons/urinalysis.svg" alt="" width="48" height="48">
+        -->
+            <h3>Urinalysis</h3>
+            <p>Urine tests for routine screening.</p>
+            <a class="btn btn--small" href="urinalysis.html">Overview</a>
+        </article>
+    </div>
+    </div>
+</section>
+
+    <section class="section">
+    <div class="container">
+            <h2>Check-ups &amp; requests</h2>
+        <div class="grid">
+        <article class="card">
+            <h3>Online Check-up</h3>
+            <p>Consult with a doctor online, from wherever you are.</p>
+            <a class="btn btn--small" href="appointment.html">Book online</a>
+        </article>
+        <article class="card">
+            <h3>Face-to-Face Check-up</h3>
+            <p>Visit the clinic and see your doctor in person.</p>
+            <a class="btn btn--small" href="appointment.html">Book a visit</a>
+        </article>
+        <article class="card">
+            <h3>Medical Certificate</h3>
+            <p>Request your certificate without lining up.</p>
+            <a class="btn btn--small" href="requests.html">Request now</a>
+        </article>
+    </div>
+    </div>
+    </section>
+
+
+    <footer class="footer">
+    <div class="container footer__grid">
+            <div>
+                <h3>[CLINIC NAME]</h3>
+                <p>Clinic &amp; Patient Care. Caring for you, one visit at a time.</p>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <ul><li><a href="ct-scan.html">CT Scan</a></li>
+                    <li><a href="x-ray.html">X-ray</a></li>
+                    <li><a href="laboratory-testing.html">Laboratory Testing</a></li>
+                    <li><a href="urinalysis.html">Urinalysis</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Patients</h4>
+                <ul>
+                    <li><a href="find-a-doctor.html">Find a Doctor</a></li>
+                    <li><a href="appointment.html">Make an Appointment</a></li>
+                    <li><a href="requests.html">Medical Certificate</a></li>
+                    <li><a href="enquiry.html">Make an Enquiry</a></li>
+                </ul>
+            </div>
+            <div id="contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Emergency: (000) 000-0000</li>
+                    <li>info@clinicname.example</li>
+                    <li>[Clinic address], Philippines</li>
+                    <li>Open Mon-Sat, 8:00 AM - 6:00 PM</li>
+                </ul>
+            </div>
+        </div>
+    <div class="container footer__bottom">&copy; 2026 [CLINIC NAME] | DCIT 24 Final Project</div>
+    </footer>
+
+</body>
+</html>
